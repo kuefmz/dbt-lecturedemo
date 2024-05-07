@@ -11,3 +11,13 @@ sources:
         tests:
           - unique:
               column_name: "(product_id || '-' || date_date)"
+
+models:
+  - name: stg_raw_data_circle__raw_cc_stock
+    description: raw stocks
+    tests:
+      - unique:
+          column_name: product_id
+  - name: stg_raw_data_circle__raw_cc_sales
+    description: raw sales
+    
